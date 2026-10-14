@@ -170,3 +170,105 @@ function multiplicacion(a, b) {
 
 console.log(multiplicacion(3, 4));
 
+// 20.-
+
+function division(a, b) {
+    return a / b;
+}
+
+console.log(division(10, 2));
+
+// 21.-
+
+function esPar(numero) {
+    if (numero % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(esPar(2));
+console.log(esPar(3));
+
+// 22.-
+
+function suma(a, b) {
+    return a + b;
+}
+
+function resta(a, b) {
+    return a - b;
+}
+
+function multiplicacion(a, b) {
+    return a * b;
+}
+
+let arrayFunciones = [suma, resta, multiplicacion];
+
+console.log(arrayFunciones[0](1, 3));
+console.log(arrayFunciones[1](1, 3));
+console.log(arrayFunciones[2](1, 3));
+
+// 23.-
+
+function ordenarArray2(array) {
+    return array.sort((a, b) => b - a);
+}
+
+const arrayDesordenado2 = [5, 2, 9, 1, 6];
+
+console.log("Array ordenado: " + ordenarArray2(arrayDesordenado2));
+
+// 24.-
+
+function obtenerImpares(array) {
+    const nuevoArray = [];
+
+    for (let i = 0; i < array.length; i++) {
+        const numeroActual = array[i];
+
+        if (numeroActual % 2 !== 0) {
+            nuevoArray.push(numeroActual);
+        }
+    }
+
+    return nuevoArray;
+}
+
+const arrayNumeros3 = [1, 2, 3, 4, 5, 6, 7];
+
+console.log("Elementos impares: " + obtenerImpares(arrayNumeros3));
+
+// 25.-
+
+function sumarArray(array) {
+    let resultado = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        resultado = resultado + array[i];
+    }
+
+    return resultado;
+}
+
+const arrayParaSumar = [1, 2, 3];
+
+console.log("Resultado de la suma: " + sumarArray(arrayParaSumar));
+
+// 26.-
+
+function multiplicarArray(array) {
+    let resultado = 1;
+
+    for (let i = 0; i < array.length; i++) {
+        resultado = resultado * array[i];
+    }
+
+    return resultado;
+}
+
+const arrayParaMultiplicar = [2, 3, 4];
+
+console.log("Resultado de la multiplicación: " + multiplicarArray(arrayParaMultiplicar));
